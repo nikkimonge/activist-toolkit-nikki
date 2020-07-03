@@ -1,0 +1,239 @@
+/* 
+
+This CSS file is contains the CSS rule sets for 
+    - index.html
+    - any universal elements that all pages use
+
+The CSS for the take-action.html is in take-action.css
+
+*/
+
+/************************************************/
+/************* UNIVERSAL ELEMENTS ***************/
+/************************************************/
+
+/* TODO: Customize your font properties and background color for all elements inside the <body> and <html> tags */
+body,
+html {
+  height: 100%;
+  font-size: 30px;
+  font-family: "Roboto Condensed", sans-serif;
+  line-height: 2em;
+  margin: 0em;
+  color: white; /* Change the font color*/
+  background-color: #2D2D34;
+  box-sizing: border-box;
+}
+
+h1 {
+  letter-spacing: 5px;
+  font-size: 50px;
+  font-family: "Roboto Condensed", sans-serif;
+  color: #B97375;
+  text-align: center;
+}
+
+h2 {
+  letter-spacing: 3px;
+  font-size: 25px;
+  font-family: "Roboto Condensed", sans-serif;
+  color: #B97375;
+  text-align: center;
+  line-height: 1.3em;
+}
+
+p a {
+  color: #B97375;
+  text-decoration: none;
+}
+
+/************************************************/
+/*************** CSS FOR NAV BAR ****************/
+/************************************************/
+
+ul.nav-bar {
+  /* Styling for the <ul class="nav-bar"> element */
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #B97375;
+  border-style: solid;
+  border-color: #2D2D34;
+}
+
+li.nav {
+  /* Styling for the <li class="nav"> element */
+  float: right;
+  font-size: 20px;
+}
+
+li.nav2 {
+  float: left;
+  font-size: 50px;
+  font-family: "Playfair Display", serif;
+}
+
+li.nav a {
+  /* Styling for the <a> elements in <li class="nav"> */
+  display: block;
+  color: #2D2D34;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+li.nav2 a {
+  /* Styling for the <a> elements in <li class="nav"> */
+  display: block;
+  color: #FBF7F8;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: "Playfair Display", serif;
+}
+
+li.nav a:hover {
+  /* Styling for the <a> elements when the mouse is hovering in <li class="nav"> */
+  background-color: #2D2D34;
+  color: #B97375;
+}
+
+li.nav2 a:hover {
+  /* Styling for the <a> elements when the mouse is hovering in <li class="nav"> */
+  background-color: #2D2D34;
+  color: #B97375;
+}
+
+/************************************************/
+/*********** CSS FOR FLEXBOX HEADING ************/
+/************************************************/
+
+.flex-container {
+  display: flex; /* Set the flexbox display */
+  flex-direction: row; /* Configure the flex items to row */
+  flex-wrap: nowrap; /* Don’t wrap the flex items */
+  justify-content: center; /* Justify the flex items to the center */
+  align-items: center; /* Align the flex items to the center */
+
+  /* Design properties */
+  background-color: #2D2D34;
+  padding: 5px;
+
+  /* Positioning properties */
+  position: absolute;
+  left: 20%;
+  right: 20%;
+  top: 30%; /* Change this value to move the box up or down */
+
+  /*Debugging Tip: Uncomment the line below to see the outline of the container*/
+  /*border-style: dotted; */
+}
+
+/* TODO: Review the CSS properties to the flex item for the heading (the left box) */
+
+.heading-home {
+  padding: 2%;
+  color: #B97375;
+  font-size: 50px;
+  letter-spacing: 10px;
+  line-height: 60px;
+  text-align: center;
+  font-family: "Playfair Display", serif;
+
+  /*Debugging Tip: Uncomment the line below to see the outline of the container*/
+  /*border-style: dotted;*/
+}
+
+/* TODO: Review the CSS properties to the flex item for the intro text (the right box) */
+.intro-text {
+  background-color: #B97375;
+  padding: 4%;
+  margin: 3%;
+  color: #2D2D34;
+  font-size: 25px;
+  letter-spacing: 3px;
+  line-height: 1.6em; /* Adds space between lines */
+  text-align: center;
+  font-family: "Roboto Condensed", sans-serif;
+
+  /*Debugging Tip: Uncomment the line below to see the outline of the container*/
+  /*border-style: dotted;*/
+}
+
+/************************************************/
+/*************** PARALLAX SCROLL ****************/
+/************************************************/
+
+/*-----------TEXT SECTIONS-----------*/
+
+.text-section {
+  background-color: #2D2D34;
+  padding: 20px 45px;
+  margin: 35px;
+  text-align: center;
+}
+
+/*---------IMAGE STYLING + PARALLAX PROPERTY---------*/
+
+/* TODO: Add the CSS selector for each image to the collective image rule set */
+
+.main-message,
+.image-one,
+.image-two {
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #B97375;
+  background-size: cover;
+  min-height: 100%; /* This adjusts the height of the image */
+
+  /* TODO: Add the property to create the parallax scrolling effect here */
+}
+
+/* TODO: Replace the current image URL with your own. This is the top image on your homepage. */
+.main-message {
+  background-image: url("https://cdn.glitch.com/fda09f56-5778-43e8-ab7b-a0a7fa6c0876%2FIMG_6927.jpg?v=1592965919440");
+  background-attachment: fixed;
+}
+
+/* TODO: Replace the current image URL with your own */
+.image-one {
+  background-image: url("https://cdn.glitch.com/fda09f56-5778-43e8-ab7b-a0a7fa6c0876%2Fwomen-posing-skyline-700px.jpg?v=1592966450667");
+  background-attachment: fixed;
+}
+
+.image-two {
+  background-image: url("https://cdn.glitch.com/fda09f56-5778-43e8-ab7b-a0a7fa6c0876%2Fshondaland-littlegirls-1583878624.jpg?v=1592966681225");
+  background-attachment: fixed;
+}
+
+.image-three {
+  background-image: url("https://cdn.glitch.com/fda09f56-5778-43e8-ab7b-a0a7fa6c0876%2Fshondaland-littlegirls-1583878624.jpg?v=1592966681225");
+  background-attachment: fixed;
+}
+
+/* TODO: Add a second background image. Make sure you add this class selector to the collective image rule set above */
+
+/* TODO: Add more background images by repeating the process above */
+
+/*-----------IMAGE ATTRIBUTIONS (if required)-----------*/
+.attributions {
+  font-size: 12px;
+  text-align: right;
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 700px) {
+  .flex-container {
+    flex-wrap: wrap;
+    top: 20%;
+  }
+}
+/******************************************************/
+/***** CHANGE INDEX.HTML CSS BASED ON SCREEN SIZE *****/
+/******************************************************/
