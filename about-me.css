@@ -1,0 +1,21 @@
+h3 {
+  font-color: white;
+  font-size: 20px;
+  text-align: center;
+}
+
+.about-me {
+  align: center;
+  width: 600px;
+  height: auto;
+}
+
+.me-info-container {
+  text-align: center;
+}
+
+#me {
+  line-height: 2em;
+  text-align: center;
+  font-size: 19px;
+}
